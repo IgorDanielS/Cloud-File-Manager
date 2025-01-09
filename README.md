@@ -1,6 +1,6 @@
 <h1>API de Gerenciamento de Arquivos na Nuvem</h1>
 
-<p>Este projeto é uma API backend para upload, download e gerenciamento de arquivos armazenados em serviços de nuvem como AWS S3, Google Cloud Storage ou Azure Blob Storage. O objetivo é oferecer um sistema seguro, escalável e eficiente para manipulação de arquivos.
+<p>Este projeto é uma API backend para upload, download e gerenciamento de arquivos armazenados na nuvem utilizando o Supabase. O objetivo é oferecer um sistema seguro, escalável e eficiente para manipulação de arquivos.
 </p>
 <hr>
 
