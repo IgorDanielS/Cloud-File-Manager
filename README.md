@@ -1,69 +1,68 @@
-API de Gerenciamento de Arquivos na Nuvem
+<h1>API de Gerenciamento de Arquivos na Nuvem</h1>
 
-Este projeto é uma API backend para upload, download e gerenciamento de arquivos armazenados em serviços de nuvem como AWS S3, Google Cloud Storage ou Azure Blob Storage. O objetivo é oferecer um sistema seguro, escalável e eficiente para manipulação de arquivos.
+<p>Este projeto é uma API backend para upload, download e gerenciamento de arquivos armazenados em serviços de nuvem como AWS S3, Google Cloud Storage ou Azure Blob Storage. O objetivo é oferecer um sistema seguro, escalável e eficiente para manipulação de arquivos.
+</p>
+<hr>
 
-Funcionalidades
+<h2>Funcionalidades</h2>
+<h3>1. Autenticação e Autorização</h3>
+<ul>
+    <li>Autenticação com JWT (JSON Web Token).</li>
+    <li>Controle de acesso com Spring Security.</li>
+    <li>Perfis de usuário (admin, user) para diferentes permissões.</li>
+</ul>
 
-1. Autenticação e Autorização
+<h3>2. Upload de Arquivos</h3>
+<ul>
+    <li>Envio de arquivos para o bucket na nuvem.</li>
+    <li>Validação do tipo e tamanho do arquivo.</li>
+</ul>
 
-Autenticação com JWT (JSON Web Token).
+<h3>3. Download de Arquivos</h3>
+<ul>
+    <li>Geração de URLs temporárias para download direto.</li>
+    <li>Restrições de acesso baseadas no perfil do usuário.</li>
+</ul>
 
-Controle de acesso com Spring Security.
+<h3>4. Gerenciamento de Arquivos</h3>
+<ul>
+    <li>Listagem de arquivos armazenados no bucket.</li>
+    <li>Exclusão de arquivos.</li>
+    <li>Atualização de metadados (ex.: renomear arquivos).</li>
+</ul>
 
-Perfis de usuário (admin, user) para diferentes permissões.
+<h3>5. Controle de Acesso (ACL)</h3>
+<ul>
+    <li>Permissões específicas por arquivo.</li>
+    <li>Visibilidade pública ou privada configurável.</li>
+</ul>
 
-2. Upload de Arquivos
+<hr>
 
-Envio de arquivos para o bucket na nuvem.
+<h2>Tecnologias Utilizadas</h2>
+<ul>
+    <li><strong>Java 17</strong></li>
+    <li><strong>Spring Boot</strong>:
+        <ul>
+            <li>spring-boot-starter-web</li>
+            <li>spring-boot-starter-security</li>
+            <li>spring-cloud-starter-aws (ou equivalente para outros provedores de nuvem)</li>
+        </ul>
+    </li>
+    <li><strong>Banco de Dados</strong>: PostgreSQL ou MySQL</li>
+    <li><strong>Serviços de Nuvem</strong>: AWS S3 / Google Cloud Storage / Azure Blob Storage</li>
+    <li><strong>JWT</strong> para autenticação</li>
+    <li><strong>Maven</strong> para gerenciamento de dependências</li>
+</ul>
 
-Validação do tipo e tamanho do arquivo.
+<hr>
 
-3. Download de Arquivos
+<h2>Arquitetura do Projeto</h2>
+<ul>
+    <li><strong>Controller</strong>: Endpoints para upload, download e gerenciamento de arquivos.</li>
+    <li><strong>Service</strong>: Lógica de negócio para integração com serviços de nuvem.</li>
+    <li><strong>Repository</strong>: Gerenciamento de metadados no banco de dados.</li>
+    <li><strong>Security</strong>: Configuração do Spring Security com JWT.</li>
+</ul>
 
-Geração de URLs temporárias para download direto.
-
-Restrições de acesso baseadas no perfil do usuário.
-
-4. Gerenciamento de Arquivos
-
-Listagem de arquivos armazenados no bucket.
-
-Exclusão de arquivos.
-
-Atualização de metadados (ex.: renomear arquivos).
-
-5. Controle de Acesso (ACL)
-
-Permissões específicas por arquivo.
-
-Visibilidade pública ou privada configurável.
-
-Tecnologias Utilizadas
-
-Java 17
-
-Spring Boot:
-
-spring-boot-starter-web
-
-spring-boot-starter-security
-
-spring-cloud-starter-aws (ou equivalente para outros provedores de nuvem)
-
-Banco de Dados: PostgreSQL ou MySQL
-
-Serviços de Nuvem: AWS S3 / Google Cloud Storage / Azure Blob Storage
-
-JWT para autenticação
-
-Maven para gerenciamento de dependências
-
-Arquitetura do Projeto
-
-Controller: Endpoints para upload, download e gerenciamento de arquivos.
-
-Service: Lógica de negócio para integração com serviços de nuvem.
-
-Repository: Gerenciamento de metadados no banco de dados.
-
-Security: Configuração do Spring Security com JWT.
+<hr>
