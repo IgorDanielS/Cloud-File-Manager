@@ -46,11 +46,10 @@
         <ul>
             <li>spring-boot-starter-web</li>
             <li>spring-boot-starter-security</li>
-            <li>spring-cloud-starter-aws (ou equivalente para outros provedores de nuvem)</li>
         </ul>
     </li>
     <li><strong>Banco de Dados</strong>: PostgreSQL ou MySQL</li>
-    <li><strong>Serviços de Nuvem</strong>: AWS S3 / Google Cloud Storage / Azure Blob Storage</li>
+    <li><strong>Serviço de Nuvem</strong>: Supabase</li>
     <li><strong>JWT</strong> para autenticação</li>
     <li><strong>Maven</strong> para gerenciamento de dependências</li>
 </ul>
