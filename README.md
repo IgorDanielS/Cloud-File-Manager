@@ -63,5 +63,3 @@
     <li><strong>Repository</strong>: Gerenciamento de metadados no banco de dados.</li>
     <li><strong>Security</strong>: Configuração do Spring Security com JWT.</li>
 </ul>
-
-<hr>
